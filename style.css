@@ -46,8 +46,22 @@ body {
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: #000000 !important;
   }
+
+  .navbar .navbar-toggle .icon-bar{
+    background-color: #ffffff !important;
+  }
+
+  .navbar .navbar-toggle:hover {
+    background-color: #000000 !important;
+  }
+  
+
+  .navbar .navbar-toggle:focus {
+    background-color: #000000 !important;
+  }
+  
 
   .fixer{
     height: 300px;
