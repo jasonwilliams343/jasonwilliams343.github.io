@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Portfolio</title>
+  
+  <title>Jason Williams</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/449908a2fc.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon"  type="image/png" sizes="20×20" href="me-circle.png">
 </head>
 
 <body id="follow" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -85,7 +86,7 @@
 </div>
 
 <!-- Third Container (Grid) -->
-<div id="projects" class="container-fluid bg-3 text-center">    
+<div id="projects" class="container-fluid bg-3 text-center" >    
   <h2 class="margin">App Projects</h2><br>
   <div class="row text-center">
     <div class="col-sm-4">
@@ -378,26 +379,137 @@
   </div>
 </div>
 
+<!-- Web Projects  (Grid) -->
+<div id="web" class="container-fluid text-center" style="background-color:#2D9DD1"> 
+  <h2 class="margin">Web Projects</h2><br>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newsApp.jpg" alt="Vue News" style="height:360px;border:3px black solid">
+        <p style="color:black"><strong>VueJs News Web App</strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalNewsApp">
+            See Video
+            </button> 
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="django-blog.jpg" alt="Django Blog" style="height:360px;border:3px black solid">
+        <p style="color:black"><strong>Django Blog</strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalDjangoBlog">
+            See Video
+            </button> 
+        </div>
+      </div>
+    </div>
+    <br/>
+    </div>
+</div>
+
+<!-- First Web Projects Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalNewsApp">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >VueJs News Web App</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <video class="videofix" controls>
+          <source src="news.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Web Projects Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalDjangoBlog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >Django Blog</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <video class="videofix" controls>
+          <source src="Django-Blog.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Certificate Container (Grid) -->
 <div id="certificates" class="container-fluid bg-1 text-center"> 
   <h2 class="margin">Certificates</h2><br>
   <div class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="googleDigital.png" alt="Fundamentals of Digital Marketing" width="400" height="300" style="border:5px black solid">
+        <img src="googleDigital.png" alt="Fundamentals of Digital Marketing" style="height:360px;border:3px black solid">
         <p style="color:black"><strong>The Fundamentals of Digital Marketing</strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalDMarketing">
+            Enlarge
+            </button> 
+        </div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="flutterDev.png" alt="Flutter Development" width="400" height="300" style="border:5px black solid">
+        <img src="flutterDev.png" alt="Flutter Development" style="height:360px;border:3px black solid">
         <p style="color:black"><strong>Flutter Development BootCamp</strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalFlutter">
+            Enlarge
+            </button> 
+        </div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="designThinking.jpg" alt="Design Thinking" width="400" height="300" style="border:5px black solid">
+        <img src="designThinking.jpg" alt="Design Thinking"  style="height:360px;border:3px black solid">
         <p style="color:black"><strong>Design Thinking in 3 steps</strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalDesignThinking">
+            Enlarge
+            </button> 
+        </div>
         </div>
       </div>
     </div><br/>
@@ -405,14 +517,35 @@
   <div class="row text-center">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="prescence.jpg" alt="Creating a Professional Online Prescence" width="400" height="200" style="border:5px black solid">
+        <img src="prescence.jpg" alt="Creating a Professional Online Prescence"  style="height:360px;border:5px black solid">
         <p style="color:black"><strong>Creating a Professional Online Prescence</strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalProfessional">
+            Enlarge
+            </button> 
+        </div>
         </div>
       </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="financialStatements.jpg" alt="Reading Financial Statements" width="400" height="300" style="border:5px black solid">
-        <p><strong>Reading Financial Statements </strong></p>
+        <img src="financialStatements.jpg" alt="Reading Financial Statements" style="height:360px">
+        <p style="color:black"><strong>Reading Financial Statements </strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalFinancial">
+            Enlarge
+            </button> 
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="how to create great content.jpg" alt="How to Create Great Online Content" style="height:360px;border:5px black solid">
+        <p style="color:black"><strong>How to Create Great Online Content </strong></p>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalGreatC">
+            Enlarge
+            </button> 
+        </div>
       </div>
     </div>
     <!--<div class="col-sm-4">
@@ -428,6 +561,185 @@
       </div>
     </div> -->
     </div>
+</div>
+
+<!-- First Certificate Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalDMarketing">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >Fundamentals of Digital Marketing</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <img src="googleDigital.png" alt="Fundamentals of Digital Marketing" style="height:550px;border:3px black solid">
+        </div>
+        
+        
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Certificate Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalFlutter">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >Flutter Development BootCamp</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <img src="flutterDev.png" alt="Flutter Development BootCamp" style="height:550px;border:3px black solid">
+        </div>
+      
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Certificate Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalDesignThinking">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >Design Thinking in 3 Steps</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <img src="designThinking.jpg" alt="Flutter Development BootCamp" style="height:550px;border:3px black solid">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Certificate Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalProfessional">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >Creating a Professional Online Prescence</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <img src="prescence.jpg" alt="Creating a Professional Online Prescence"  style="height:550px;border:5px black solid">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fifth Certificate Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalFinancial">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >Reading Financial Statements</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <img src="financialStatements.jpg" alt="Reading Financial Statements" style="height:550px">
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sixth Certificate Modal -->
+<div class="container"> 
+    <div class="modal fade" id="modalGreatC">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title dark" >Creating Great Online Content</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <img src="how to create great content.jpg" alt="How to Create Great Online Content" style="height:600px;border:5px black solid"/>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer ">
+          <span>
+            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal">Close</button>
+          </span>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Contact Container -->
